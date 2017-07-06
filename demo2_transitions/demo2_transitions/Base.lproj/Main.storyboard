@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo2_transitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh5-8k-jjj">
+                                <rect key="frame" x="125" y="165" width="125" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cover Vertical">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f5H-IM-haE" kind="modal" modalTransitionStyle="coverVertical" id="F8k-6m-h1Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-QF-vXB">
+                                <rect key="frame" x="124" y="246" width="128" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Flip Horizontal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NbI-bo-Xdx" kind="modal" modalTransitionStyle="flipHorizontal" id="UpZ-VA-wkX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDP-YM-mct">
+                                <rect key="frame" x="119" y="327" width="129" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cross Disolver">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="69T-xo-V8W" kind="modal" modalTransitionStyle="crossDissolve" id="v9K-fp-jwU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nac-ba-h7Z">
+                                <rect key="frame" x="139" y="408" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Partial Clur">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eoY-oc-ATj" kind="modal" modalTransitionStyle="partialCurl" id="x6n-LQ-aRQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-Pf-FDi">
+                                <rect key="frame" x="164" y="489" width="48" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="None">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lEj-z1-IBp" kind="modal" id="gAd-cp-p31"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eVh-Pf-FDi" firstAttribute="top" secondItem="nac-ba-h7Z" secondAttribute="bottom" constant="45" id="7Gr-ei-ixz"/>
+                            <constraint firstItem="bs5-QF-vXB" firstAttribute="top" secondItem="Jh5-8k-jjj" secondAttribute="bottom" constant="45" id="HDO-IP-QhN"/>
+                            <constraint firstItem="Jh5-8k-jjj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="PZK-Ti-ldm"/>
+                            <constraint firstItem="eVh-Pf-FDi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiP-g9-Y4B"/>
+                            <constraint firstItem="NDP-YM-mct" firstAttribute="top" secondItem="bs5-QF-vXB" secondAttribute="bottom" constant="45" id="cZg-IZ-gQl"/>
+                            <constraint firstItem="bs5-QF-vXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jrf-FY-YrM"/>
+                            <constraint firstItem="nac-ba-h7Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3C-wu-kaA"/>
+                            <constraint firstItem="Jh5-8k-jjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qb7-Qn-A7E"/>
+                            <constraint firstItem="nac-ba-h7Z" firstAttribute="top" secondItem="NDP-YM-mct" secondAttribute="bottom" constant="45" id="tss-Bj-GkE"/>
+                            <constraint firstItem="NDP-YM-mct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="119" id="yFM-Hp-uTQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gOJ-Vq-Hwy">
+            <objects>
+                <viewController id="f5H-IM-haE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FDK-Ki-04g"/>
+                        <viewControllerLayoutGuide type="bottom" id="BL9-oj-COk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CNK-Pd-YQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-h4-uun">
+                                <rect key="frame" x="142" y="303.5" width="91" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Atras">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Mc-p8-zZo" kind="unwind" unwindAction="unwindMainViewWithSegue:" id="J3t-88-Dhd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c3c-h4-uun" firstAttribute="centerY" secondItem="CNK-Pd-YQQ" secondAttribute="centerY" id="7hR-h3-jAa"/>
+                            <constraint firstItem="c3c-h4-uun" firstAttribute="centerX" secondItem="CNK-Pd-YQQ" secondAttribute="centerX" id="euv-a4-w8K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xub-Qo-x4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6Mc-p8-zZo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iQb-vX-qMj">
+            <objects>
+                <viewController id="NbI-bo-Xdx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bsQ-1i-3eJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="88o-iY-cCN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZoA-xe-x5P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xx-99-KNr">
+                                <rect key="frame" x="73" y="264" width="204" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Atras Rojo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rRh-HQ-gGs" kind="unwind" unwindAction="unwindMainViewWithSegue:" id="yVg-ho-NPS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.23573791980743408" blue="0.34365540742874146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agQ-jE-OtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rRh-HQ-gGs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1332" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uuC-4H-Mhj">
+            <objects>
+                <viewController id="69T-xo-V8W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9rh-hf-PNt"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJq-lf-EVj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ar4-FZ-zAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJi-uC-COP">
+                                <rect key="frame" x="79" y="102" width="206" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Atras Verde">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Bf-8x-DdR" kind="unwind" unwindAction="unwindMainViewWithSegue:" id="G96-ZU-gVY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33932539533004336" green="1" blue="0.23605997880222263" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMd-7i-sB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7Bf-8x-DdR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="783"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xot-UY-Faz">
+            <objects>
+                <viewController id="eoY-oc-ATj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kWK-2h-yWa"/>
+                        <viewControllerLayoutGuide type="bottom" id="bbw-yq-uTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Owb-XS-gdU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwQ-Zz-QQa">
+                                <rect key="frame" x="45" y="110" width="240" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Atras Celeste">
+                                    <color key="titleColor" red="1" green="0.23573791980743408" blue="0.34365540742874146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8x6-Di-c1U" kind="unwind" unwindAction="unwindMainViewWithSegue:" id="YT4-WA-JfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22214285710000001" green="0.93612229820000004" blue="0.94110381600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5Z-HY-Jd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8x6-Di-c1U" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="779"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vOH-zU-sej">
+            <objects>
+                <viewController id="lEj-z1-IBp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihY-ip-q5f"/>
+                        <viewControllerLayoutGuide type="bottom" id="tP8-23-znr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YOr-GV-374">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-uQ-wwc">
+                                <rect key="frame" x="18" y="104" width="249" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="39"/>
+                                <state key="normal" title="Atras Amarillo">
+                                    <color key="titleColor" red="1" green="0.23573791980743408" blue="0.34365540742874146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.23573791980743408" blue="0.34365540742874146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EJE-nh-4M9" kind="unwind" unwindAction="unwindMainViewWithSegue:" id="ihe-gM-pZX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97694848295413728" blue="0.10239105901038958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYV-ya-H3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EJE-nh-4M9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1969" y="779"/>
+        </scene>
+    </scenes>
+</document>
